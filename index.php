@@ -10,5 +10,5 @@
     require_once '/etc/mysql-creds/ideashare-mysql.inc.php';
     
     echo $ISM["host"];
-    echo "\nWelcome to the future site of IdeaShare!!";
+    echo "<br/>Welcome to the future site of IdeaShare!!";
 ?>
