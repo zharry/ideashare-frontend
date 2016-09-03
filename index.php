@@ -1,3 +1,3 @@
 <?php
-    phpinfo();
+    echo "Welcome to the future site of IdeaShare!";
 ?>
