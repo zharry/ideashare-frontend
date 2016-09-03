@@ -1,3 +1,3 @@
 <?php
-    echo "Welcome to the future site of IdeaShare!";
+    echo "Welcome to the future site of IdeaShare!!";
 ?>
