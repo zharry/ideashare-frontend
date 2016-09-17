@@ -26,7 +26,7 @@
 ?>
 
 <form action="login.php" method="post">
-Email: <input type="text" name="email"><br>
-Pass: <input type="password" name="password"><br>
-<input type="submit" value="Submit">
+    Email: <input type="text" name="email"><br>
+    Pass: <input type="password" name="password"><br>
+    <input type="submit" value="Submit">
 </form>
