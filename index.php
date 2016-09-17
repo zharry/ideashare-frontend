@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row" id="topsearch">
                 <div class="input-group">
-                    <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2">
+                    <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchideas();">
                     <span class="input-group-addon" id="basic-addon2" onclick="searchideas();">Search</span>
                     <span class="input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo();">Create Idea</span>
                 </div>
