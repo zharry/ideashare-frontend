@@ -3,6 +3,9 @@
     require_once '../includes/connection.php';
 
     if (!empty($_POST)) {
+        
+        print_r($_POST);
+        
         $prep = mysqli_prepare($conn, "INSERT INTO is_users (username, email, frist, last, password) 
             VALUES (?, ?, ?, ?, ?, ?);
         ");
