@@ -11,6 +11,11 @@
     </head>
     <body>
         <div class="container">
+            <div class="row" id="logo">
+                <div class="pull-left">
+                    IdeaShare
+                </dvi>
+            </div>
             <div class="row" id="topsearch">
                 <div class="input-group">
                     <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchIdeas();">
