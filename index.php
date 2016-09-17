@@ -10,27 +10,40 @@
         <link rel="stylesheet" href="/includes/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <textarea type="text" id="topsearch" class="form-control" placeholder="Search or Create Idea" onkeyup="expandTopbar()" style="height: 34px"></textarea>
-                        </div>
-                        <button type="button" id="topbuttona" class="btn btn-default" style="height: 34px">Search Ideas</button>
-                        <button type="button" id="topbuttonb" class="btn btn-default" style="height: 34px">Create Idea</button>
-                    </form>
+        <div class="container">
+            <div class="row" id="topsearch">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">Search</span>
+                    <span class="input-group-addon" id="basic-addon2" href="#createidea">Create Idea</span>
                 </div>
             </div>
-        </nav>
+            <div class="row" id="searchresults">
+            </div>
+            <div class="row" id="body">
+            </div>
+            <div class="row" id="createidea">
+                <h3>Create a new Idea</h3>
+                <div class="createideaform input-group">
+                    <span class="input-group-addon" id="basic-addon1">+</span>
+                    <input id="createideaauthor" type="text" class="form-control" placeholder="Author ID" aria-describedby="basic-addon1">
+                </div>
+                <div class="createideaform input-group">
+                    <span class="input-group-addon" id="basic-addon1">+</span>
+                    <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
+                </div>
+                <div class="createideaform form-group" style="margin-bottom: 0px;">
+                    <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea"></textarea>
+                </div>
+                <div class="createideaform input-group">
+                    <span class="input-group-addon" id="basic-addon1">+</span>
+                    <input id="createideatags" type="text" class="form-control" placeholder="Tags (Seperated by ,)" aria-describedby="basic-addon1">
+                </div>
+                <div class="createideaform input-group" style="width: 100%">
+                    <button type="button" class="btn btn-info" style="width: 100%" onclick="createIdea();">Submit</button>
+                </div>
+            </div>
+        </div>
     
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
