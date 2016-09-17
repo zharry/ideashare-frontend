@@ -4,11 +4,11 @@
 
     if (!empty($_POST)) {
         
-        $username = mysqli_real_escape_string($db, $_POST['username']);
-        $email = mysqli_real_escape_string($db, $_POST['email']);
-        $frist = mysqli_real_escape_string($db, $_POST['frist']);
-        $last = mysqli_real_escape_string($db, $_POST['last']);
-        $password = mysqli_real_escape_string($db, $_POST['password']);
+        $username = mysqli_real_escape_string($conn, $_POST['username']);
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $frist = mysqli_real_escape_string($conn, $_POST['frist']);
+        $last = mysqli_real_escape_string($conn, $_POST['last']);
+        $password = mysqli_real_escape_string($conn, $_POST['password']);
         
         $sql = "INSERT INTO is_users (username, email, frist, last, password) 
                     VALUES ('$username', '$email', '$first', '$last', '$password')
