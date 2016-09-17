@@ -28,7 +28,7 @@ function analyseTags() {
     api("analyse", [content], liveTagChange);
 }
 function liveTagChange(tags) {
-    var tagsList = JSON.parse(tags);
+    var tagsList = JSON.parse(tags)["response"];
     var tagsOut = "";
     for (var i = 0; i < tagsList.length; i++) {
         tagsOut += tagsList[i] + ","
