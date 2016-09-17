@@ -22,6 +22,9 @@ function searchIdeas() {
 
 function analyseTags() {
     var content = document.getElementById("createideacontent").value;
+    if (content == "") {
+        content = " ";
+    }
     api("analyse", [content], liveTagChange);
 }
 function liveTagChange(tags) {
