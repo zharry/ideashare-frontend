@@ -3,7 +3,11 @@ function createIdea() {
     var title = document.getElementById("createideatitle").value;
     var content = document.getElementById("createideacontent").value;
     var tags = document.getElementById("createideatags").value;
-    api("ideas/create", [title, author, content, tags], alert);
+    var tagsList = tags.split(",");
+    for (var i = 0; i < tagsList.length; i++) {
+        tagsList[i] = tagsList[i].trim().toLowerCase();
+    }
+    api("ideas/create", [title, author, content, JSON.stringify(tagsList)], alert);
 }
 
 function searchideas() {
