@@ -15,7 +15,7 @@
             while ($row = mysqli_fetch_assoc($result)) {
                 $_SESSION = $row;
             }
-            echo "Welcome {$_SESSION["username"]}!";
+            echo "Welcome " . $_SESSION["username"];
         } else {
             echo "Login failed!";
         }
