@@ -6,7 +6,7 @@
         
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $frist = mysqli_real_escape_string($conn, $_POST['frist']);
+        $first = mysqli_real_escape_string($conn, $_POST['first']);
         $last = mysqli_real_escape_string($conn, $_POST['last']);
         $password = mysqli_real_escape_string($conn, $_POST['password']);
         
