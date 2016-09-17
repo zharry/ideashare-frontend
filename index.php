@@ -13,9 +13,9 @@
         <div class="container">
             <div class="row" id="topsearch">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2">
-                    <span class="input-group-addon" id="basic-addon2">Search</span>
-                    <span class="input-group-addon" id="basic-addon2" href="#createidea">Create Idea</span>
+                    <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2" onclick="searchideas();">Search</span>
+                    <span class="input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo();">Create Idea</span>
                 </div>
             </div>
             <div class="row" id="searchresults">

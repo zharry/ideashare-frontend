@@ -5,3 +5,17 @@ function createIdea() {
     var tags = document.getElementById("createideatags").value;
     api("ideas/create", [title, author, content, tags], alert);
 }
+
+function searchideas() {
+    var content = document.getElementById("topsearchquery").value;
+    api("ideas/analyse", [content], alert);
+}
+
+(function($) {
+    $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'fast');
+        return this; // for chaining...
+    }
+})(jQuery);
