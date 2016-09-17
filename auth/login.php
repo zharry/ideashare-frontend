@@ -25,7 +25,7 @@
     }
 ?>
 
-<form action="register.php" method="post">
+<form action="login.php" method="post">
 Email: <input type="text" name="email"><br>
 Pass: <input type="password" name="password"><br>
 <input type="submit" value="Submit">
