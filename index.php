@@ -33,7 +33,7 @@
                     <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
                 </div>
                 <div class="createideaform form-group" style="margin-bottom: 0px;">
-                    <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea" onclick="analyseTags();"></textarea>
+                    <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea" onclick=""></textarea>
                 </div>
                 <div class="createideaform input-group">
                     <span class="input-group-addon" id="basic-addon1">+</span>
