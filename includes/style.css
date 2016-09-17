@@ -6,3 +6,9 @@
 .createideaform {
     padding: 2px;
 }
+.input-group-addon:hover {
+    cursor: pointer;
+}
+.input-group-addon {
+    cursor: auto;
+}
