@@ -3,5 +3,5 @@ function createIdea() {
     var title = document.getElementById("createideatitle").value;
     var content = document.getElementById("createideaauthor").value;
     var tags = document.getElementById("createideatags").value;
-    api("ideas/create", [author, title, content, tags], alert);
+    api("ideas/create", [title, author, content, tags], alert);
 }
