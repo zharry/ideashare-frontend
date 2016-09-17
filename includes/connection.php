@@ -11,7 +11,7 @@
     require_once '/etc/mysql-creds/ideashare-mysql.inc.php';
     
     // Create connection
-    $conn = mysqli_connect($ISM["host"], $ISM["user"], $ISM["pass"], $ISM["db"]);
+    $conn = mysqli_connect("ideashare.ml", $ISM["user"], $ISM["pass"], $ISM["db"], 33306);
 
     // Check connection
     if (mysqli_connect_errno()) {
