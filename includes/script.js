@@ -8,7 +8,7 @@ function createIdea() {
 
 function searchideas() {
     var content = document.getElementById("topsearchquery").value;
-    api("api/analyse", [content], alert);
+    api("analyse", [content], alert);
 }
 
 (function($) {
