@@ -12,8 +12,8 @@
     <body>
         <div class="container">
             <div class="row" id="logo">
-                <div class="pull-left">
-                    IdeaShare
+                <div class="pull-left" style="width: 100%">
+                    <h2>IdeaShare</h2>
                 </dvi>
             </div>
             <div class="row" id="topsearch">
