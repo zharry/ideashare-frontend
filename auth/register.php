@@ -4,18 +4,24 @@
 
     if (!empty($_POST)) {
         
-        $prep = mysqli_prepare($conn, "INSERT INTO is_users (username, email, frist, last, password) 
-            VALUES (?, ?, ?, ?, ?);
-        ");
-        mysqli_stmt_bind_param($prep, 'sssss', $_POST["username"], $_POST["email"], $_POST["frist"], $_POST["last"], $_POST["password"]);
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $email = mysqli_real_escape_string($db, $_POST['email']);
+        $frist = mysqli_real_escape_string($db, $_POST['frist']);
+        $last = mysqli_real_escape_string($db, $_POST['last']);
+        $password = mysqli_real_escape_string($db, $_POST['password']);
         
-        if (mysqli_stmt_execute($prep) && mysqli_stmt_close($prep)) {
-            die("Registered!");
+        $sql = "INSERT INTO is_users (username, email, frist, last, password) 
+                    VALUES ('$username', '$email', '$first', '$last', '$pass')
+        ";
+        
+        if (mysqli_query($conn, $sql)) {
+            echo "Registered!";
         } else {
-            die("Registration Failed!");
+            echo "Error: " . mysqli_error($conn);
         }
         
-        
+        mysqli_close($conn);
+        die();
     }
 
 ?>
