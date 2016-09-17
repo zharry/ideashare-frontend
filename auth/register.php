@@ -23,7 +23,6 @@
         mysqli_close($conn);
         die();
     }
-
 ?>
 
 <form action="register.php" method="post">
