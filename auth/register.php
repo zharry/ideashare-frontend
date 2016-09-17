@@ -7,7 +7,7 @@
             VALUES (?, ?, ?, ?, ?, ?);
         ");
         mysqli_stmt_bind_param($prep, 'sssss', $_POST["username"], $_POST["email"], $_POST["frist"], $_POST["last"], $_POST["password"]);
-        mysqli_stmt_execute($stmt);
+        mysqli_stmt_execute($prep);
         
         echo "Registered!";
         die();
