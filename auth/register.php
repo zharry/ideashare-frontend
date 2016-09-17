@@ -11,7 +11,7 @@
         $password = mysqli_real_escape_string($db, $_POST['password']);
         
         $sql = "INSERT INTO is_users (username, email, frist, last, password) 
-                    VALUES ('$username', '$email', '$first', '$last', '$pass')
+                    VALUES ('$username', '$email', '$first', '$last', '$password')
         ";
         
         if (mysqli_query($conn, $sql)) {
