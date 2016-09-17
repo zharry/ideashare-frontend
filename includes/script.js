@@ -30,6 +30,7 @@ function liveTagChange(tags) {
     for (var i = 0; i < tagsList.length; i++) {
         tagsOut += tagsList[i] + ","
     }
+    document.getElementById("createideatags").value = tagsOut;
 }
 
 (function($) {
