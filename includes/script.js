@@ -12,7 +12,7 @@ function createIdea() {
             tTInc++;
         }
     }
-    api("ideas/create", [title, author, content, JSON.stringify(tagsList)], alert);
+    api("ideas/create", [title, author, content, JSON.stringify(trimmedTags)], alert);
 }
 
 function searchIdeas() {
