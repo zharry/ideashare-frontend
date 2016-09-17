@@ -7,7 +7,7 @@ function createIdea() {
     var trimmedTags = []
     var tTInc = 0;
     for (var i = 0; i < tagsList.length; i++) {
-        if (tagsList[i] != "" || tagsList[i].trim() == "") {
+        if (tagsList[i] != "" || tagsList[i].trim() != "") {
             trimmedTags[tTInc] = tagsList[i].trim().toLowerCase();
             tTInc++;
         }
