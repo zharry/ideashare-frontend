@@ -24,6 +24,7 @@
                 </div>
             </div>
             <div class="row" id="searchresults">
+                <h6>Using tag cloud search with: sexy, dick, penis, english channel,</h6>
             </div>
             <div class="row" id="body">
             </div>

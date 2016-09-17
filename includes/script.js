@@ -17,7 +17,9 @@ function createIdea() {
 
 function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
-    api("analyse", [content], alert);
+    if (content.split('')[content.length - 1] == " ") {
+        api("analyse", [content], alert);
+    }
 }
 
 function analyseTags() {
@@ -25,7 +27,9 @@ function analyseTags() {
     if (content == "") {
         content = " ";
     }
-    api("analyse", [content], liveTagChange);
+    if (content.split('')[content.length - 1] == " ") {
+        api("analyse", [content], liveTagChange);
+    }
 }
 function liveTagChange(tags) {
     var tagsList = JSON.parse(tags)["response"];

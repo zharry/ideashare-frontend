@@ -12,3 +12,7 @@
 .input-group-addon {
     cursor: auto;
 }
+.container {
+    padding-right: 38px;
+    padding-left: 38px;
+}
