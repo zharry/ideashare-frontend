@@ -4,15 +4,32 @@ function createIdea() {
     var content = document.getElementById("createideacontent").value;
     var tags = document.getElementById("createideatags").value;
     var tagsList = tags.split(",");
+    var trimmedTags = []
+    var tTInc = 0;
     for (var i = 0; i < tagsList.length; i++) {
-        tagsList[i] = tagsList[i].trim().toLowerCase();
+        if (tagsList[i] != "") {
+            trimmedTags[inc] = tagsList[i].trim().toLowerCase();
+            tTInc++;
+        }
     }
     api("ideas/create", [title, author, content, JSON.stringify(tagsList)], alert);
 }
 
-function searchideas() {
+function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
     api("analyse", [content], alert);
+}
+
+function analyseTags() {
+    var content = document.getElementById("createideacontent").value;
+    api("analyse", [content], liveTagChange);
+}
+function liveTagChange(tags) {
+    var tagsList = JSON.parse(tags);
+    var tagsOut = "";
+    for (var i = 0; i < tagsList.lengthl i++) {
+        tagsOut += tagsList[i] + ","
+    }
 }
 
 (function($) {

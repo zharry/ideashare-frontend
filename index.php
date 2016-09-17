@@ -13,8 +13,8 @@
         <div class="container">
             <div class="row" id="topsearch">
                 <div class="input-group">
-                    <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchideas();">
-                    <span class="input-group-addon" id="basic-addon2" onclick="searchideas();">Search</span>
+                    <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchIdeas();">
+                    <span class="input-group-addon" id="basic-addon2" onclick="searchIdeas();">Search</span>
                     <span class="input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo();">Create Idea</span>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
                 </div>
                 <div class="createideaform form-group" style="margin-bottom: 0px;">
-                    <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea"></textarea>
+                    <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea" onclick="analyseTags();"></textarea>
                 </div>
                 <div class="createideaform input-group">
                     <span class="input-group-addon" id="basic-addon1">+</span>
