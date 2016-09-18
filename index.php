@@ -33,7 +33,7 @@
             </div>
         
             <div class="row" id="createidea">
-                <br/><center><h2>Create a new Idea</h2></center>
+                <br/><center><h2>Submit an Idea</h2></center>
                 <div class="createideaform input-group">
                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-star" aria-hidden="true"></i></span>
                     <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
