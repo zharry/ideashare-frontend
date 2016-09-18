@@ -19,3 +19,9 @@
 #searchresults {
     border-bottom: 1px solid black;
 }
+h1 {
+    font-size: 50px;
+}
+.tsg {
+    height: 50px;
+}

@@ -18,9 +18,9 @@
             </div>
             <div class="row" id="topsearch">
                 <div class="input-group">
-                    <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchIdeas();">
-                    <span class="input-group-addon" id="basic-addon2" onclick="forceSearch();">Search</span>
-                    <span class="input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo(); $('#createideatitle').focus();">Create Idea</span>
+                    <input id="topsearchquery" type="text" class="tsg form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchIdeas();">
+                    <span class="tsg input-group-addon" id="basic-addon2" onclick="forceSearch();">Search</span>
+                    <span class="tsg input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo(); $('#createideatitle').focus();">Create Idea</span>
                 </div>
             </div>
             <div class="row" id="searchresults">
