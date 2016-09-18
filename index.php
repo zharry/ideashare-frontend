@@ -26,6 +26,7 @@
                 </div><br/>
             </div>
             <div class="row" id="searchresults">
+                <img src="includes/spinner.gif">
             </div>
             <div class="row" id="createidea">
                 <h3>Create a new Idea</h3>
