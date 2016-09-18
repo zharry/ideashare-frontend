@@ -99,3 +99,7 @@ document.getElementById("topsearchquery")
         forceSearch();
     }
 });
+
+$( document ).ready(function() {
+    $('#topsearchquery').focus();
+});
