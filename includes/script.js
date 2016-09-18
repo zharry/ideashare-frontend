@@ -77,6 +77,10 @@ function liveTagChange(tags) {
     }
 }
 
+setInterval(function() {
+    $('.bootstrap-tagsinput').attr("style", "border-bottom-left-radius: 0px; border-top-left-radius: 0px; width: 100%;");
+}, 50);
+
 // Stackoverflow Answers:
 
 (function($) {
