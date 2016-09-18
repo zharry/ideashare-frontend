@@ -43,9 +43,9 @@ function searchOut(response) {
         	xmlHttp.open("GET", "http://ideashare.ml:49080/api/ideas/get/" + candidates[i]["id"], false);
         	xmlHttp.send();
             var resp = JSON.parse(xmlHttp.responseText)["response"];
-            output += "Title: " + resp["title"] + "</br>";
-            output += "Created: " + resp["timestamp"] + "</br>";
-            output += "Content: " + resp["body"] + "</br>";
+            output += "<h4><b>" + resp["title"] + "</b></h4>";
+            output += "<h5><i>Created on: " + resp["timestamp"] + "</i></h5>";
+            output += "<p>" + resp["body"] + "</p>";
         }
     }
     document.getElementById("searchresults").innerHTML = output;

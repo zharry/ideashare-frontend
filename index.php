@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row" id="logo">
                 <div class="pull-left" style="width: 100%">
-                    <h1>IdeaShare</h1> <h3>An open platform for idea distribution and inspiration</h3><br/>
+                    <h1>IdeaShare</h1> <h5>An open platform for idea distribution and inspiration</h5><br/>
                 </dvi>
             </div>
             <div class="row" id="topsearch">
