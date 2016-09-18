@@ -39,7 +39,11 @@ function searchOut(response) {
         } else if (i == 0 && candidates[0]["rank"] == 0) {
             output += "No results";
         } else if (candidates[i]["rank"] != 0) {
-            output += candidates[i]["id"];
+        	var xmlHttp = new XMLHttpRequest();
+        	xmlHttp.open("GET", "http://ideashare.ml:49080/api/ideas/get/" + candidates[i]["id"], false);
+        	xmlHttp.send();
+            var resp = JSON.parse(xmlHttp.responseText);
+            output += xmlHttp.responseText;
         }
     }
     document.getElementById("searchresults").innerHTML = output;
