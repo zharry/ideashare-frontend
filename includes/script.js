@@ -25,23 +25,22 @@ function searchIdeas() {
     }
 }
 function searchOut(response) {
+    var output = "";
     var candidates = JSON.parse(response)["response"];
-    if (candidates.length == 0) {
-        alert("No matching search!");
-    } else {
-        var sorted = [];
-        var output = [];
-        var outI = 0;
-        for (var i = 0; i < candidates.length; i++) {
-            sorted[candidates[i]["rank"]] = candidates[i]["id"];
+    var tags = JSON.parse(response)["tags"];
+    output += "<h6>Using tag cloud search with: ";
+    for (var i = 0; i < tags.length; i++) {
+        output += tags[i] + ", ";
+    }
+    output += "</h6>";
+    for (var i = 0; i < candidates.length; i++) {
+        if (candidates.length == 0) {
+            output += "No results";
+        } else if (i == 0 && candidates[0]["rank"] == 0) {
+            output += "No results";
+        } else if (candidates[i]["rank"] != 0) {
+            output += candidates[i]["id"];
         }
-        sorted.forEach(function(val, key) {
-            if (val != null && key != 0) {
-                output[outI] = val;
-                outI++;
-            }
-        });
-        alert(JSON.stringify(output.reverse()));
     }
 }
 
