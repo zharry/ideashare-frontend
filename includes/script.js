@@ -42,6 +42,7 @@ function searchOut(response) {
             output += candidates[i]["id"];
         }
     }
+    document.getElementById("searchresults").innerHTML = output;
 }
 
 function analyseTags() {
