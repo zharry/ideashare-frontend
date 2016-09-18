@@ -41,9 +41,13 @@
                 <div class="createideaform form-group" style="margin-bottom: 0px;">
                     <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea" onkeyup="analyseTags();"></textarea>
                 </div>
-                <div class="createideaform input-group">
-                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-tags" aria-hidden="true"></i></span>
-                    <input id="createideatags" type="text" class="form-control" data-role="tagsinput" placeholder="Tags (Seperated by ,)" aria-describedby="basic-addon1">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="createideaform input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-tags" aria-hidden="true"></i></span>
+                            <input id="createideatags" data-role="tagsinput" type="text" class="form-control" placeholder="Tags (Seperated by ,)" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
                 </div>
                 <div class="createideaform input-group" style="width: 100%">
                     <button type="button" class="btn btn-info" style="width: 100%" onclick="createIdea();">Submit</button>
