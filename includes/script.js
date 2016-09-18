@@ -30,7 +30,7 @@ function searchOut(response) {
     var tags = JSON.parse(response)["tags"];
     output += "<h6>Using tag cloud search with: ";
     for (var i = 0; i < tags.length; i++) {
-        output += tags[i] + ", ";
+        output += "<span class=\"label label-primary\">" + tags[i] + "</span>";
     }
     output += "</h6>";
     output += "<div class=\"list-group\">";

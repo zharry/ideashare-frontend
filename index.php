@@ -44,6 +44,8 @@
                     <button type="button" class="btn btn-info" style="width: 100%" onclick="createIdea();">Submit</button>
                 </div>
             </div>
+            <br/>
+            <br/>
         </div>
     
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
