@@ -8,6 +8,7 @@
         <title>IdeaShare</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link rel="stylesheet" href="/includes/style.css">
     </head>
     <body>
@@ -29,14 +30,14 @@
             <div class="row" id="createidea">
                 <h3>Create a new Idea</h3>
                 <div class="createideaform input-group">
-                    <span class="input-group-addon" id="basic-addon1">+</span>
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-star" aria-hidden="true"></i></span>
                     <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
                 </div>
                 <div class="createideaform form-group" style="margin-bottom: 0px;">
                     <textarea id="createideacontent" class="form-control" rows="5" id="comment" placeholder="Content for new Idea" onkeyup="analyseTags();"></textarea>
                 </div>
                 <div class="createideaform input-group">
-                    <span class="input-group-addon" id="basic-addon1">+</span>
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-tags" aria-hidden="true"></i></span>
                     <input id="createideatags" type="text" class="form-control" placeholder="Tags (Seperated by ,)" aria-describedby="basic-addon1">
                 </div>
                 <div class="createideaform input-group" style="width: 100%">
