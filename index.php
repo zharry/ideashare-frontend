@@ -28,10 +28,9 @@
             <div class="row" id="spinnerFrame">
                 <img id="spinner" src="includes/spinner.gif" style="height: auto; width: 120px; left: calc(50% - 60px); position: relative; display: none;">
             </div>
-            <div class="well">
-                <div class="row" id="searchresults">
-                </div>
+            <div class="row" id="searchresults">
             </div>
+        
             <div class="row" id="createidea">
                 <h3>Create a new Idea</h3>
                 <div class="createideaform input-group">
