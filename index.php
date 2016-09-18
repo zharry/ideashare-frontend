@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="/includes/bootstrap-tagsinput.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container"><br/>
             <div class="row" id="logo">
                 <div class="pull-left" style="width: 100%">
-                    <h1>IdeaShare</h1> <h5>An open platform for idea distribution and inspiration</h5><br/>
+                    <center><h1>IdeaShare</h1></center> <center><h4>An open platform for idea distribution and inspiration</h4></center><br/>
                 </div>
             </div>
             <div class="row" id="topsearch">
@@ -33,7 +33,7 @@
             </div>
         
             <div class="row" id="createidea">
-                <h3>Create a new Idea</h3>
+                <br/><center><h2>Create a new Idea</h2></center>
                 <div class="createideaform input-group">
                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-star" aria-hidden="true"></i></span>
                     <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
