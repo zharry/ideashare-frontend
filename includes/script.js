@@ -73,6 +73,7 @@ function liveTagChange(tags) {
     document.getElementById("createideatags").value = tagsOut;
 }
 
+// jQuery Plugins:
 (function($) {
     $.fn.goTo = function() {
         $('html, body').animate({
@@ -81,3 +82,11 @@ function liveTagChange(tags) {
         return this; // for chaining...
     }
 })(jQuery);
+
+document.getElementById("topsearchquery")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("ciB").click();
+    }
+});
