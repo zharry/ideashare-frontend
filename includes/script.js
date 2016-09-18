@@ -35,8 +35,8 @@ function searchOut(response) {
         for (var i = 0; i < candidates.length; i++) {
             sorted[candidates[i]["rank"]] = candidates[i]["id"];
         }
-        sorted.forEach(function(val) {
-            if (val != null) {
+        sorted.forEach(function(val, key) {
+            if (val != null && key != 0) {
                 output[outI] = val;
                 outI++;
             }
