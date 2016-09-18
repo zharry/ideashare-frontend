@@ -43,7 +43,7 @@ function searchOut(response) {
         	var xmlHttp = new XMLHttpRequest();
         	xmlHttp.open("GET", "http://ideashare.ml:49080/api/ideas/get/" + candidates[i]["id"], false);
         	xmlHttp.send();
-            output += "<a href='#' class=\"list-group-item\">";
+            output += "<a href='' class=\"list-group-item\">";
             var resp = JSON.parse(xmlHttp.responseText)["response"];
             output += "<h4><b>" + resp["title"] + "</b></h4>";
             output += "<h5><i>Created on: " + resp["timestamp"] + "</i></h5>";
