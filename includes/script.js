@@ -41,7 +41,7 @@ function searchOut(response) {
                 outI++;
             }
         });
-        alert(JSON.stringify(sorted.reverse()));
+        alert(JSON.stringify(output.reverse()));
     }
 }
 
