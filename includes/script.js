@@ -73,7 +73,8 @@ function liveTagChange(tags) {
     document.getElementById("createideatags").value = tagsOut;
 }
 
-// jQuery Plugins:
+// Stackoverflow Answers:
+
 (function($) {
     $.fn.goTo = function() {
         $('html, body').animate({
@@ -87,6 +88,7 @@ document.getElementById("topsearchquery")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
-        document.getElementById("ciB").click();
+        $('#createidea').goTo(); 
+        $('#createideatitle').focus();
     }
 });
