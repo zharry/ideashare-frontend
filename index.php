@@ -20,17 +20,13 @@
                 <div class="input-group">
                     <input id="topsearchquery" type="text" class="form-control" placeholder="Start typing to seach for existing ideas" aria-describedby="basic-addon2" onkeyup="searchIdeas();">
                     <span class="input-group-addon" id="basic-addon2" onclick="forceSearch();">Search</span>
-                    <span class="input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo();">Create Idea</span>
+                    <span class="input-group-addon" id="basic-addon2" onclick="$('#createidea').goTo(); $('#createideatitle').focus();">Create Idea</span>
                 </div>
             </div>
             <div class="row" id="searchresults">
             </div>
             <div class="row" id="createidea">
                 <h3>Create a new Idea</h3>
-                <div class="createideaform input-group">
-                    <span class="input-group-addon" id="basic-addon1">+</span>
-                    <input id="createideaauthor" type="text" class="form-control" placeholder="Author ID" aria-describedby="basic-addon1">
-                </div>
                 <div class="createideaform input-group">
                     <span class="input-group-addon" id="basic-addon1">+</span>
                     <input id="createideatitle" type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
