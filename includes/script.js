@@ -33,6 +33,7 @@ function searchOut(response) {
         output += tags[i] + ", ";
     }
     output += "</h6>";
+    output += "<div class=\"list-group\">";
     for (var i = 0; i < candidates.length; i++) {
         if (candidates.length == 0) {
             output += "No results";
@@ -42,12 +43,15 @@ function searchOut(response) {
         	var xmlHttp = new XMLHttpRequest();
         	xmlHttp.open("GET", "http://ideashare.ml:49080/api/ideas/get/" + candidates[i]["id"], false);
         	xmlHttp.send();
+            output += "<div class=\"list-group-item\">";
             var resp = JSON.parse(xmlHttp.responseText)["response"];
             output += "<h4><b>" + resp["title"] + "</b></h4>";
             output += "<h5><i>Created on: " + resp["timestamp"] + "</i></h5>";
             output += "<p>" + resp["body"] + "</p>";
+            output += "<div>";
         }
     }
+    output += "<div>";
     document.getElementById("searchresults").innerHTML = output;
 }
 
