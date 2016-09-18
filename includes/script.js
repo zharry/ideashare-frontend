@@ -2,13 +2,13 @@ function createIdea() {
     var author = document.getElementById("createideaauthor").value;
     var title = document.getElementById("createideatitle").value;
     var content = document.getElementById("createideacontent").value;
-    var tags = document.getElementById("createideatags").value.toLowerCase();
+    var tags = document.getElementById("createideatags").value;
     var tagsList = tags.split(",");
     var trimmedTags = []
     var tTInc = 0;
     for (var i = 0; i < tagsList.length; i++) {
         if (tagsList[i].trim()) {
-            trimmedTags[tTInc] = tagsList[i].trim().toLowerCase();
+            trimmedTags[tTInc] = tagsList[i].trim();
             tTInc++;
         }
     }
@@ -60,7 +60,7 @@ function liveTagChange(tags) {
     for (var i = 0; i < tagsList.length; i++) {
         tagsOut += tagsList[i] + ","
     }
-    document.getElementById("createideatags").value = tagsOut.toLowerCase();
+    document.getElementById("createideatags").value = tagsOut;
 }
 
 (function($) {
