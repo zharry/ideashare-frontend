@@ -88,7 +88,6 @@ document.getElementById("topsearchquery")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
-        $('#createidea').goTo(); 
-        $('#createideatitle').focus();
+        forceSearch();
     }
 });
