@@ -18,8 +18,11 @@ function createIdea() {
 function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
     if (content.split('')[content.length - 1] == " ") {
-        api("analyse", [content], alert);
+        api("analyse", [content], searchOut);
     }
+}
+function searchOut(response) {
+    var resp = JSON.parse(responce)["responce"];
 }
 
 function analyseTags() {
