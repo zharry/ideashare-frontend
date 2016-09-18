@@ -1,5 +1,5 @@
 #topsearch {
-    width: 100%;
+    /*width: 100%;*/
     padding: 15px;
     border-bottom: 1px solid black;
 }
@@ -15,4 +15,7 @@
 .container {
     padding-right: 38px;
     padding-left: 38px;
+}
+#searchresults {
+    border-bottom: 1px solid black;
 }

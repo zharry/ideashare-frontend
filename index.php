@@ -25,8 +25,6 @@
             </div>
             <div class="row" id="searchresults">
             </div>
-            <div class="row" id="body">
-            </div>
             <div class="row" id="createidea">
                 <h3>Create a new Idea</h3>
                 <div class="createideaform input-group">
