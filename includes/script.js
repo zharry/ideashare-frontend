@@ -32,7 +32,7 @@ function searchOut(response) {
     var output = "";
     var candidates = JSON.parse(response)["response"];
     var tags = JSON.parse(response)["tags"];
-    output += "<h6>Using tag cloud search with: ";
+    output += "<h6>Tag cloud searched with: ";
     for (var i = 0; i < tags.length; i++) {
         output += "<span class=\"label label-primary\">" + tags[i] + "</span>&nbsp;";
     }
