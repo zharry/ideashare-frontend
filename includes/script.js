@@ -55,7 +55,7 @@ function searchOut(response) {
             output += "</a>";
         }
     }
-    output += "<div>";
+    output += "</div>";
     document.getElementById("searchresults").innerHTML = output;
     document.getElementById("spinner").style.display = "none";
 }
