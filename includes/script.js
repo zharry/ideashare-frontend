@@ -49,9 +49,9 @@ function searchOut(response) {
         	xmlHttp.send();
             output += "<a href='javascript:;' class=\"list-group-item\">";
             var resp = JSON.parse(xmlHttp.responseText)["response"];
-            output += "<h4><b>" + resp["title"] + "</b></h4>";
-            output += "<h5><i>Created on: " + resp["timestamp"] + "</i></h5>";
-            output += "<p>" + resp["body"] + "</p>";
+            output += "<h3><b>" + resp["title"] + "</b></h3>";
+            output += "<h4><i>Created on: " + resp["timestamp"] + "</i></h4>";
+            output += "<p style='font-size: 120%;'>" + resp["body"] + "</p>";
             output += "</a>";
         }
     }
