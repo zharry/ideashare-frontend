@@ -43,7 +43,7 @@
                 </div>
                 <div class="createideaform input-group">
                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-tags" aria-hidden="true"></i></span>
-                    <input id="createideatags" data-role="tagsinput" type="text" class="form-control" placeholder="Tags (Seperated by ,)" aria-describedby="basic-addon1">
+                    <input style="border-bottom-left-radius: 0px; border-top-left-radius: 0px; width: 100%;" id="createideatags" data-role="tagsinput" type="text" class="form-control" placeholder="Tags (Seperated by ,)" aria-describedby="basic-addon1">
                 </div>
                 <div class="createideaform input-group" style="width: 100%">
                     <button type="button" class="btn btn-info" style="width: 100%" onclick="createIdea();">Submit</button>
