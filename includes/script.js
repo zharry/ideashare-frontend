@@ -18,11 +18,26 @@ function createIdea() {
 function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
     if (content.split('')[content.length - 1] == " ") {
-        api("analyse", [content], searchOut);
+        api("searchOut", [content], searchOut);
     }
 }
 function searchOut(response) {
-    var resp = JSON.parse(responce)["responce"];
+    var candidates = JSON.parse(response)["response"];
+    if (candidates.length == 0) {
+        alert("No matching search!");
+    } else {
+        var sorted = [];
+        var output = [];
+        var outI = 0;
+        for (var i = 0; i < candidates.length; i++) {
+            sorted[candidates[i]["rank"]] = candidates[i]["id"];
+        }
+        sorted.forEach(function(val) {
+            output[outI] = val;
+            outI++;
+        });
+        alert(JSON.stringify(sorted.reverse()));
+    }
 }
 
 function analyseTags() {
