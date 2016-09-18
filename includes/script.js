@@ -14,7 +14,10 @@ function createIdea() {
     }
     api("ideas/create", [title, author, content, JSON.stringify(trimmedTags)], alert);
 }
-
+function forceSearch() {
+    var content = document.getElementById("topsearchquery").value;
+    api("search", [content], searchOut);
+}
 function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
     if (content.split('')[content.length - 1] == " ") {
@@ -33,8 +36,10 @@ function searchOut(response) {
             sorted[candidates[i]["rank"]] = candidates[i]["id"];
         }
         sorted.forEach(function(val) {
-            output[outI] = val;
-            outI++;
+            if (val != null) {
+                output[outI] = val;
+                outI++;
+            }
         });
         alert(JSON.stringify(sorted.reverse()));
     }
