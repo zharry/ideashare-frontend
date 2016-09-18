@@ -2,7 +2,7 @@ function createIdea() {
     var author = 0;
     var title = document.getElementById("createideatitle").value;
     var content = document.getElementById("createideacontent").value;
-    var tags = $("createideatags").val();
+    var tags = $("#createideatags").val();
     var tagsList = tags.split(",");
     var trimmedTags = []
     var tTInc = 0;
@@ -73,7 +73,7 @@ function liveTagChange(tags) {
     var tagsList = JSON.parse(tags)["response"];
     var tagsOut = "";
     for (var i = 0; i < tagsList.length; i++) {
-        $('createideatags').tagsinput('add', tagsList[i]);
+        $('#createideatags').tagsinput('add', tagsList[i]);
     }
 }
 
