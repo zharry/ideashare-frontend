@@ -12,7 +12,7 @@ function createIdea() {
             tTInc++;
         }
     }
-    api("ideas/create", [title, author, content, JSON.stringify(trimmedTags)], alert);
+    api("ideas/create", [title, author, content, JSON.stringify(trimmedTags)], console.log);
     
     window.location.reload();
 }
