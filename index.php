@@ -25,8 +25,8 @@
                     <span class="tsg input-group-addon" id="basic-addon2 ciB" onclick="$('#createidea').goTo(); $('#createideatitle').focus();">Create Idea</span>
                 </div><br/>
             </div>
-            <div class="row" id="spinner">
-                <img id="" src="includes/spinner.gif" style="height: auto; width: 120px; left: calc(50% - 60px); position: relative; display: none;">
+            <div class="row" id="spinnerFrame">
+                <img id="spinner" src="includes/spinner.gif" style="height: auto; width: 120px; left: calc(50% - 60px); position: relative; display: none;">
             </div>
             <div class="row" id="searchresults">
             </div>
