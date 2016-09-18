@@ -14,7 +14,7 @@ function createIdea() {
     }
     api("ideas/create", [title, author, content, JSON.stringify(trimmedTags)], alert);
     
-    window.location = "http://ideashare.ml";
+    window.location.reload();
 }
 function forceSearch() {
     var content = document.getElementById("topsearchquery").value;
