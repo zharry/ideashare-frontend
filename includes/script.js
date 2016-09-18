@@ -48,7 +48,7 @@ function searchOut(response) {
             output += "<h4><b>" + resp["title"] + "</b></h4>";
             output += "<h5><i>Created on: " + resp["timestamp"] + "</i></h5>";
             output += "<p>" + resp["body"] + "</p>";
-            output += "<div>";
+            output += "</div>";
         }
     }
     output += "<div>";
