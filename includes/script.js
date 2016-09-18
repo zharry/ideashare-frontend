@@ -16,13 +16,13 @@ function createIdea() {
 }
 function forceSearch() {
     var content = document.getElementById("topsearchquery").value;
-    document.getElementById("spinner").style.display = "auto";
+    document.getElementById("spinner").style.display = "block";
     api("search", [content], searchOut);
 }
 function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
     if (content.split('')[content.length - 1] == " ") {
-        document.getElementById("spinner").style.display = "auto";
+        document.getElementById("spinner").style.display = "block";
         api("search", [content], searchOut);
     }
 }
