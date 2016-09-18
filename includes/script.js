@@ -18,7 +18,7 @@ function createIdea() {
 function searchIdeas() {
     var content = document.getElementById("topsearchquery").value;
     if (content.split('')[content.length - 1] == " ") {
-        api("searchOut", [content], searchOut);
+        api("search", [content], searchOut);
     }
 }
 function searchOut(response) {
