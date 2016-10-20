@@ -13,7 +13,3 @@ function api(action, data, callback) {
 	xmlHttp.open("GET", reqUrl, true);
 	xmlHttp.send();
 }
-
-function test(message) {
-    alert(message)
-}
