@@ -1,5 +1,5 @@
 function api(action, data, callback) {
-    var reqUrl = "http://ideashare.ml:49080/api/" + action + "/";
+    var reqUrl = "http://ideashare.ml:54010/api/" + action + "/";
     for (var i = 0; i < data.length; i++) {
         reqUrl += data[i] + "/";
     }

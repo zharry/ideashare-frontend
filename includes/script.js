@@ -45,7 +45,7 @@ function searchOut(response) {
             output += "No results";
         } else if (candidates[i]["rank"] != 0) {
         	var xmlHttp = new XMLHttpRequest();
-        	xmlHttp.open("GET", "http://ideashare.ml:49080/api/ideas/get/" + candidates[i]["id"], false);
+        	xmlHttp.open("GET", "http://ideashare.ml:54010/api/ideas/get/" + candidates[i]["id"], false);
         	xmlHttp.send();
             output += "<a href='javascript:;' class=\"list-group-item\">";
             var resp = JSON.parse(xmlHttp.responseText)["response"];
